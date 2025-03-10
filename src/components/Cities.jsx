@@ -29,16 +29,14 @@ const Cities = ({countryName, stateName}) => {
                 ))}
             </select>
             {countryName && stateName && selectedCity ? (
-                <div>
-                    <h2>
-                    <strong>You selected </strong>
-                        <span style={{ color: "black", fontSize: "24px", fontWeight: "bold", marginLeft: "2px" }}>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <h3 style={{ color: "black", fontSize: "20px", fontWeight: "bold"}}> You selected </h3>
+                        <h2 style={{ color: "black", fontSize: "24px", fontWeight: "bold", marginLeft: "2px" }}>
                             {selectedCity}
-                        </span>,   
-                        <span style={{ color: "gray", fontSize: "16px",  marginLeft: "2px"}}>
+                        </h2>,   
+                        <h3 style={{ color: "gray", fontSize: "16px",  marginLeft: "2px"}}>
                             {stateName}, {countryName}
-                        </span>
-                    </h2>
+                        </h3>
                 </div>
             ) : (
                 <div></div>
